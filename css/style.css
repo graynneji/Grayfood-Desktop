@@ -257,23 +257,7 @@
   width: 2.4rem;
   color: #e67e22;
 }
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
+
 /**************************/
 /* TESTIMONIAL SECTION */
 /**************************/
@@ -281,9 +265,10 @@
   background-color: #fdf2e9;
   display: grid;
   grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
-.tstimonial-container {
-  padding: 9.6rem;
+.testimonials-container {
+  padding: 0 2.4rem;
 }
 .testimonials {
   display: grid;
@@ -302,16 +287,57 @@
   margin-bottom: 1.6rem;
 }
 .testimonial-name {
-  font-size: 1.8rem;
-  color: #777;
+  font-size: 1.6rem;
+  color: #6f6f6f;
 }
 .gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.4s;
+}
+.gallert-item {
+  overflow: hidden;
 }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+/**************************/
+/* Meals SECTION */
+/**************************/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
